@@ -1,4 +1,4 @@
-import { AppBar, Container, Box, Button, Typograph, TextField } from '@mui/material'; 
+import { AppBar, Container, Box, Button, Typography, TextField } from '@mui/material'; 
 
 function Home() {
 
