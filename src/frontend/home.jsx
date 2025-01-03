@@ -4,9 +4,9 @@ function Home() {
 
     return (
         <AppBar>
-            <Typograph variant='h1'>
+            <Typography variant='h1'>
                 Rolling Pines Lodge
-            </Typograph>
+            </Typography>
         </AppBar>
     ); 
 }
