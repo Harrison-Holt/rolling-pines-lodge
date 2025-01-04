@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppBar, Toolbar, Box, Button, Typography } from '@mui/material';
+import { Card, CardContent, CardMedia, AppBar, Toolbar, Box, Button, Typography } from '@mui/material';
 import { Home, MenuBook } from '@mui/icons-material';
 import { SwipeableViews } from 'react-swipeable-views-v18';
 import logo from '../assets/Rolling_Pines_Lodge_Logo.png';
@@ -92,6 +92,7 @@ function Homepage() {
                   alignItems: 'center',
                   textAlign: 'center',
                   padding: '20px',
+                  color: '#00000',
                   backgroundColor: '#f5f5f5',
                   borderRadius: '8px',
                   boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
@@ -106,7 +107,7 @@ function Homepage() {
                 <Typography variant="h6" sx={{ marginTop: '10px' }}>
                   {item.name}
                 </Typography>
-                <Typography variant="body2" sx={{ marginTop: '5px' }}>
+                <Typography variant="body2" sx={{ marginTop: '5px', color: '#00000', }}>
                   {item.description}
                 </Typography>
               </Box>
