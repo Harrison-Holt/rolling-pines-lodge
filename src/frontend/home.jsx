@@ -36,16 +36,36 @@ function Homepage() {
       {/* Offset to prevent content from being hidden behind the AppBar */}
       <Toolbar />
 
-      {/* Main Content */}
-      <Box className="main-content"
+      <Box
+        className="hero-section"
+        sx={{
+          position: 'relative',
+          height: '100vh',
+          backgroundImage: `url(${heroSectionImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          color: '#fff',
+          textAlign: 'center',
+        }}
       >
-        <Box 
-        component="img"
-        src={hero_section_image}
-        >
-        <Typography variant="h4">Welcome to Rolling Pines Lodge</Typography>
-        <Typography variant="body1">Experience fine dining amidst nature's beauty.</Typography>
+        <Box sx={{ position: 'relative', zIndex: 1 }}>
+          <Typography variant="h4">Welcome to Rolling Pines Lodge</Typography>
+          <Typography variant="body1">Experience fine dining amidst nature's beauty.</Typography>
         </Box>
+        <Box
+          sx={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            backgroundColor: 'rgba(0, 0, 0, 0.5)', // Optional: Adds a dark overlay for better text readability
+            zIndex: 0,
+          }}
+        />
       </Box>
     </>
   );
