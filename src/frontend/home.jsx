@@ -1,5 +1,6 @@
 import { AppBar, Container, Box, Button, Typography, TextField } from '@mui/material'; 
 import logo from '../assets/Rolling_Pines_Lodge_Logo.png'; 
+import { Home, MenuBook, Phone } from '@mui/icons-material';
 
 function Home() {
 
@@ -13,6 +14,15 @@ function Home() {
                 backgroundPosition: 'center', 
                 width: '10%'
             }}>
+            </Box>
+            <Box sx={{
+                display: 'flex', 
+                flexDirection: 'row', 
+                justifyContent: 'space-around',
+                alignContent: 'center'
+            }}>
+                <Typography component='a' href='#'>Menu</Typography>
+                <MenuBook/>
             </Box>
         </AppBar>
         </Container>
