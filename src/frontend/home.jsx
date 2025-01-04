@@ -9,18 +9,12 @@ import heroSectionImage from '../assets/Hero_Section_Background_Image.png';
 
 const images = [
   {
-    original: dish1Image,
-    thumbnail: dish1Image,
     description: 'Grilled Salmon - Freshly grilled salmon with a side of vegetables.',
   },
   {
-    original: dish2Image,
-    thumbnail: dish2Image,
     description: 'Steak Frites - Juicy steak served with crispy fries.',
   },
   {
-    original: dish3Image,
-    thumbnail: dish3Image,
     description: 'Vegan Delight - A delightful mix of fresh vegetables and grains.',
   },
 ];
