@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppBar, Box, Typography, Toolbar, Button, IconButton } from '@mui/material';
+import { AppBar, Box, Toolbar, Button, Typography } from '@mui/material';
 import logo from '../assets/Rolling_Pines_Lodge_Logo.png';
 import { Home, MenuBook } from '@mui/icons-material';
 import TableRestaurantIcon from '@mui/icons-material/TableRestaurant';
@@ -7,13 +7,13 @@ import TableRestaurantIcon from '@mui/icons-material/TableRestaurant';
 function Homepage() {
   return (
     <>
-      {/* Full-Width AppBar */}
+      {/* Full-Width Navbar */}
       <AppBar
-        position="static"
+        position="sticky"
         sx={{
           backgroundColor: '#451a61',
-          width: '100%', // Ensures full width
-          top: 0, // Stick to the top
+          top: 0,
+          width: '100%', // Ensure full width
         }}
       >
         <Toolbar
@@ -21,11 +21,12 @@ function Homepage() {
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'center',
-            px: 4, // Adds padding left and right
+            px: 4, // Padding for left/right
           }}
         >
           {/* Logo */}
           <Box
+            component="div"
             sx={{
               height: '75px',
               width: '75px',
@@ -47,23 +48,33 @@ function Homepage() {
             <Button
               startIcon={<Home />}
               href="#"
-              sx={{ color: '#f5f5f5', textTransform: 'none', fontSize: '1rem' }}
+              sx={{
+                color: '#f5f5f5',
+                textTransform: 'none',
+                fontSize: '1rem',
+              }}
             >
               Home
             </Button>
-
             <Button
               startIcon={<MenuBook />}
               href="#"
-              sx={{ color: '#f5f5f5', textTransform: 'none', fontSize: '1rem' }}
+              sx={{
+                color: '#f5f5f5',
+                textTransform: 'none',
+                fontSize: '1rem',
+              }}
             >
               Menu
             </Button>
-
             <Button
               startIcon={<TableRestaurantIcon />}
               href="#"
-              sx={{ color: '#f5f5f5', textTransform: 'none', fontSize: '1rem' }}
+              sx={{
+                color: '#f5f5f5',
+                textTransform: 'none',
+                fontSize: '1rem',
+              }}
             >
               Reservations
             </Button>
