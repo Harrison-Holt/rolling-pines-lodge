@@ -2,24 +2,31 @@ import React from 'react';
 import { AppBar, Toolbar, Box, Button, Typography, Card, CardMedia, CardContent, Grid } from '@mui/material';
 import { Home, MenuBook } from '@mui/icons-material';
 import 'react-image-gallery/styles/css/image-gallery.css';
-
 import logo from '../assets/Rolling_Pines_Lodge_Logo.png';
 import heroSectionImage from '../assets/Hero_Section_Background_Image.png';
+import pizzaImage from '../assets/pizza.png';
+import chickenWafflesImage from '../assets/fried-chicken-waffles.png';
+import birdDogsImage from '../assets/bird-dog.png';
 
 const featuredDishes = [
     {
-      title: 'Grilled Salmon',
-      description: 'Freshly grilled salmon with a side of vegetables.',
+      image: chickenWafflesImage,
+      title: 'Chicken & Waffles',
+      description: 'Crispy fried chicken served atop fluffy waffles, drizzled with maple syrup for a perfect blend of sweet and savory.',
     },
     {
-      title: 'Steak Frites',
-      description: 'Juicy steak served with crispy fries.',
+      image: birdDogsImage,
+      title: 'Bird Dogs',
+      description: 'Juicy chicken tenders nestled in a soft bun, topped with cheese and honey mustard, offering a delightful twist on the classic hot dog.',
     },
     {
-      title: 'Vegan Delight',
-      description: 'A delightful mix of fresh vegetables and grains.',
+      image: pizzaImage,
+      title: 'Meatball Pizza',
+      description: 'A hearty pizza topped with savory meatballs, marinara sauce, and a blend of mozzarella and parmesan cheeses.',
     },
   ];
+  
+  
   function Homepage() {
     return (
       <>
