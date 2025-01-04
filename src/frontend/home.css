@@ -43,5 +43,5 @@
   
   .body {
     background-color: #967988;
-
+    overflow-x: hidden;
   }
