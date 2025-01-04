@@ -1,17 +1,30 @@
 import React from 'react';
-import { AppBar, Container, Box, Typography, Toolbar, Button, IconButton } from '@mui/material';
+import { AppBar, Box, Typography, Toolbar, Button, IconButton } from '@mui/material';
 import logo from '../assets/Rolling_Pines_Lodge_Logo.png';
 import { Home, MenuBook } from '@mui/icons-material';
 import TableRestaurantIcon from '@mui/icons-material/TableRestaurant';
 
 function Homepage() {
   return (
-    <Container disableGutters maxWidth="xl" className='body'>
-      {/* Top Navigation Bar */}
-      <AppBar position="static" sx={{ backgroundColor: '#451a61' }}>
-        <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          
-          {/* Logo Section */}
+    <>
+      {/* Full-Width AppBar */}
+      <AppBar
+        position="static"
+        sx={{
+          backgroundColor: '#451a61',
+          width: '100%', // Ensures full width
+          top: 0, // Stick to the top
+        }}
+      >
+        <Toolbar
+          sx={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            px: 4, // Adds padding left and right
+          }}
+        >
+          {/* Logo */}
           <Box
             sx={{
               height: '75px',
@@ -24,11 +37,13 @@ function Homepage() {
           />
 
           {/* Navigation Links */}
-          <Box sx={{
-            display: 'flex',
-            gap: 3,
-            alignItems: 'center'
-          }}>
+          <Box
+            sx={{
+              display: 'flex',
+              gap: 3,
+              alignItems: 'center',
+            }}
+          >
             <Button
               startIcon={<Home />}
               href="#"
@@ -60,14 +75,22 @@ function Homepage() {
             color="secondary"
             sx={{
               textTransform: 'none',
-              fontWeight: 'bold'
+              fontWeight: 'bold',
             }}
           >
             Book Now
           </Button>
         </Toolbar>
       </AppBar>
-    </Container>
+
+      {/* Body Content */}
+      <Box sx={{ textAlign: 'center', mt: 4 }}>
+        <Typography variant="h4">Welcome to Rolling Pines Lodge</Typography>
+        <Typography variant="body1">
+          Experience fine dining amidst nature's beauty.
+        </Typography>
+      </Box>
+    </>
   );
 }
 
