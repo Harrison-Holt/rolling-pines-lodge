@@ -1,7 +1,7 @@
 import React from 'react';
 import { AppBar, Toolbar, Box, Button, Typography, Card, CardContent, CardMedia } from '@mui/material';
 import { Home, MenuBook } from '@mui/icons-material';
-import SwipeableViews from 'react-swipeable-views';
+import SwipeableViews from 'react-swipeable-views-v18';
 
 // Sample images for demonstration purposes
 import logo from './assets/Rolling_Pines_Lodge_Logo.png';
