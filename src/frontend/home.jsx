@@ -1,6 +1,7 @@
 import { AppBar, Container, Box, Button, Typography, TextField } from '@mui/material'; 
 import logo from '../assets/Rolling_Pines_Lodge_Logo.png'; 
-import { Home, MenuBook, TableRestaurantIcon } from '@mui/icons-material';
+import { Home, MenuBook } from '@mui/icons-material';
+import TableRestaurantIcon from '@mui/icons-material/TableRestaurant';
 
 function Homepage() {
 
