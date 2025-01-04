@@ -1,26 +1,26 @@
 import React from 'react';
 import { AppBar, Toolbar, Box, Button, Typography } from '@mui/material';
 import { Home, MenuBook } from '@mui/icons-material';
-import ImageGallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
 
 import logo from '../assets/Rolling_Pines_Lodge_Logo.png';
 import heroSectionImage from '../assets/Hero_Section_Background_Image.png';
 
-const images = [
-  {
-    description: 'Grilled Salmon - Freshly grilled salmon with a side of vegetables.',
-  },
-  {
-    description: 'Steak Frites - Juicy steak served with crispy fries.',
-  },
-  {
-    description: 'Vegan Delight - A delightful mix of fresh vegetables and grains.',
-  },
-];
-
-
-function Homepage() {
+const featuredDishes = [
+    {
+      title: 'Grilled Salmon',
+      description: 'Freshly grilled salmon with a side of vegetables.',
+    },
+    {
+      title: 'Steak Frites',
+      description: 'Juicy steak served with crispy fries.',
+    },
+    {
+      title: 'Vegan Delight',
+      description: 'A delightful mix of fresh vegetables and grains.',
+    },
+  ];
+  function Homepage() {
     return (
       <>
         <AppBar position="fixed" sx={{ backgroundColor: '#451a61', paddingLeft: 0, paddingRight: 0 }}>
@@ -76,24 +76,36 @@ function Homepage() {
           </Box>
         </Box>
   
-        {/* Image Gallery Section */}
-        <Box sx={{ padding: 2, backgroundColor: '#fff' }}>
-          <Typography variant="h5" sx={{ textAlign: 'center', marginBottom: 2 }}>
+        {/* Featured Dishes Section */}
+        <Box sx={{ padding: 4, backgroundColor: '#fff' }}>
+          <Typography variant="h5" sx={{ textAlign: 'center', marginBottom: 4 }}>
             Featured Dishes
           </Typography>
-          <ImageGallery
-            items={images}
-            showThumbnails={true}
-            showFullscreenButton={true}
-            showPlayButton={true}
-            autoPlay={true}
-            slideInterval={5000}
-          />
+          <Grid container spacing={4} justifyContent="center">
+            {featuredDishes.map((dish, index) => (
+              <Grid item key={index} xs={12} sm={6} md={4}>
+                <Card sx={{ maxWidth: 345, margin: 'auto' }}>
+                  <CardMedia
+                    component="img"
+                    height="200"
+                    image={dish.image}
+                    alt={dish.title}
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h6" component="div">
+                      {dish.title}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      {dish.description}
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+            ))}
+          </Grid>
         </Box>
       </>
     );
   }
   
   export default Homepage;
-  
-  
