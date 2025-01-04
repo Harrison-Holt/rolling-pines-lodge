@@ -92,14 +92,14 @@ const featuredDishes = [
           <Grid container spacing={4} justifyContent="center">
             {featuredDishes.map((dish, index) => (
               <Grid item key={index} xs={12} sm={6} md={4}>
-                <Card sx={{ maxWidth: 345, margin: 'auto', display: 'flex', flexDirection: 'column', alignContent: 'center'}}>
+                <Card sx={{ maxWidth: 345, margin: 'auto'}} className='card'>
                   <CardMedia
                     component="img"
                     height="200"
                     image={dish.image}
                     alt={dish.title}
                   />
-                  <CardContent>
+                  <CardContent sx={{display: 'flex', flexDirection: 'column', alignContent: 'center'}}>
                     <Typography gutterBottom variant="h6" component="div">
                       {dish.title}
                     </Typography>
