@@ -17,7 +17,7 @@ const events = [
 
 function UpcomingEvents() {
   return (
-    <Box sx={{ padding: 4, backgroundColor: '#f9f9f9' }}>
+    <Box sx={{ padding: 4, backgroundColor: '#967988' }}>
       <Typography variant="h5" sx={{ textAlign: 'center', marginBottom: 4 }}>
         Upcoming Events
       </Typography>
