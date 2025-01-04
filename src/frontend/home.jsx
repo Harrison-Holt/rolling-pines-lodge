@@ -35,7 +35,7 @@ function Homepage() {
       <Toolbar />
 
       {/* Main Content */}
-      <Box maxWidth={false} disableGutters sx={{ backgroundColor: '#967988', width: '100%', textAlign: 'center', mt: 4, minHeight: '100vh'  }}>
+      <Box sx={{ backgroundColor: '#967988', textAlign: 'center', mt: 4, minHeight: '100vh' }}>
         <Typography variant="h4">Welcome to Rolling Pines Lodge</Typography>
         <Typography variant="body1">Experience fine dining amidst nature's beauty.</Typography>
       </Box>
