@@ -14,7 +14,7 @@ function Homepage() {
             component="img"
             src={logo}
             alt="Rolling Pines Lodge Logo"
-            sx={{ height: '100px', width: '100' }}
+            sx={{ height: '100px', width: '100px' }}
           />
 
           {/* Navigation Links */}
