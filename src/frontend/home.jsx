@@ -40,8 +40,6 @@ function Homepage() {
       <Box className="main-content"
       component="img"
       src={hero_section_image}
-      backgroundSize= 'cover'
-      backgroundPosition='center'
       >
         <Typography variant="h4">Welcome to Rolling Pines Lodge</Typography>
         <Typography variant="body1">Experience fine dining amidst nature's beauty.</Typography>
