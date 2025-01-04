@@ -7,11 +7,11 @@ function Home() {
         <Container className='body'>
         <AppBar className='header'>
             <Box sx={{ 
-                height: '200px', 
+                height: '100px', 
                 backgroundImage: `url(${logo})`, 
                 backgroundSize: 'cover', 
                 backgroundPosition: 'center', 
-                width: '25%'
+                width: '10%'
             }}>
             </Box>
         </AppBar>
