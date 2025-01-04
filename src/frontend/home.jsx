@@ -41,7 +41,7 @@ function Homepage() {
         sx={{
           position: 'relative',
           height: '100vh',
-          backgroundImage: `url(${heroSectionImage})`,
+          backgroundImage: `url(${hero_section_image})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           display: 'flex',
