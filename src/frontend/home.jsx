@@ -121,7 +121,7 @@ function Homepage() {
       </Box>
 
       {/* Swipeable Menu Section */}
-      <Box sx={{ padding: 2, backgroundColor: '#fff' }}>
+      <Box sx={{ padding: 2, backgroundColor: '#967988' }}>
         <Typography variant="h5" sx={{ textAlign: 'center', marginBottom: 2 }}>
           Featured Dishes
         </Typography>
