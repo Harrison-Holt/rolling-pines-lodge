@@ -49,4 +49,6 @@
   html, body {
     background-color: #967988;
     overflow-x: hidden;
+    display: flex; 
+    flex-direction: column;
   }

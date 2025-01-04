@@ -39,6 +39,7 @@ function Homepage() {
       <Box
         className="hero-section"
         sx={{
+          position: 'relative',
           height: '500px',
           width: '100vw',
           backgroundImage: `url(${hero_section_image})`,
