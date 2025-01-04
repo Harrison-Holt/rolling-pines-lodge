@@ -5,7 +5,7 @@ import logo from '../assets/Rolling_Pines_Lodge_Logo.png';
 
 function Homepage() {
   return (
-    <Container maxWidth={false} disableGutters sx={{ backgroundColor: '#967988', width: '100%' }}>
+    <Container>
       <AppBar position="fixed" sx={{ backgroundColor: '#451a61' }}>
         <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           {/* Left Section: Logo */}
@@ -35,7 +35,7 @@ function Homepage() {
       <Toolbar />
 
       {/* Main Content */}
-      <Box sx={{ textAlign: 'center', mt: 4, minHeight: '100vh' }}>
+      <Box maxWidth={false} disableGutters sx={{ backgroundColor: '#967988', width: '100%', textAlign: 'center', mt: 4, minHeight: '100vh'  }}>
         <Typography variant="h4">Welcome to Rolling Pines Lodge</Typography>
         <Typography variant="body1">Experience fine dining amidst nature's beauty.</Typography>
       </Box>
