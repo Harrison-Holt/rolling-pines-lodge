@@ -5,7 +5,7 @@ import logo from '../assets/Rolling_Pines_Lodge_Logo.png';
 
 function Homepage() {
   return (
-    <Container sx={{ backgroundColor: '#967988' }}>
+    <Container sx={{ backgroundColor: '#967988', width: '100%' }}>
       <AppBar position="fixed" sx={{ backgroundColor: '#451a61' }}>
         <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
 
