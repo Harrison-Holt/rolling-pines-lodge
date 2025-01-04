@@ -114,7 +114,7 @@ function Homepage() {
         <Box sx={{ position: 'relative', zIndex: 1 }}>
           <Typography variant="h4">Welcome to Rolling Pines Lodge</Typography>
           <Typography variant="body1">Experience fine dining amidst nature's beauty.</Typography>
-          <Button variant="contained" sx={{ backgroundColor: '#451a61', color: '#f5f5f5', marginTop: '25px' }}>
+          <Button variant="contained" color="secondary" sx={{ color: '#f5f5f5', marginTop: '25px' }}>
             Book A Table
           </Button>
         </Box>
