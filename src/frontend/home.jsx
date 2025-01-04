@@ -4,11 +4,8 @@ import { Home, MenuBook } from '@mui/icons-material';
 import SwipeableViews from 'react-swipeable-views-v18';
 
 // Sample images for demonstration purposes
-import logo from './assets/Rolling_Pines_Lodge_Logo.png';
-import heroSectionImage from './assets/Hero_Section_Background_Image.png';
-import dish1Image from './assets/dish1.jpg';
-import dish2Image from './assets/dish2.jpg';
-import dish3Image from './assets/dish3.jpg';
+import logo from '../assets/Rolling_Pines_Lodge_Logo.png';
+import heroSectionImage from '../assets/Hero_Section_Background_Image.png';
 
 const menuItems = [
   {
