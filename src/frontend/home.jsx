@@ -119,22 +119,19 @@ const featuredDishes = [
           </Grid>
         </Box>
         <UpcomingEvents />
-                <AppBar
-                position="fixed"
-                sx={{ top: 'auto', bottom: 0, backgroundColor: '#231F20', paddingLeft: 0, paddingRight: 0 }}
-                >
-        <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingLeft: 0, paddingRight: 0 }}>
-            {/* Right Section: Navigation Links and Button */}
-            <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
+        <AppBar position="static" sx={{ backgroundColor: '#231F20' }}>
+        <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          {/* Right Section: Navigation Links and Button */}
+          <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
             <Button startIcon={<PhoneIcon />} href="#" sx={{ color: '#f5f5f5', textTransform: 'none' }}>
-                Contact Us
+              Contact Us
             </Button>
             <Button startIcon={<InfoIcon />} href="#" sx={{ color: '#f5f5f5', textTransform: 'none' }}>
-                About Us
+              About Us
             </Button>
-            </Box>
+          </Box>
         </Toolbar>
-        </AppBar>
+      </AppBar>
       </>
     );
   }
