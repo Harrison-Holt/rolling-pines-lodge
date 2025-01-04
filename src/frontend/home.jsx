@@ -42,7 +42,7 @@ function Homepage() {
         <Typography variant="h4">Welcome to Rolling Pines Lodge</Typography>
         <Typography variant="body1">Experience fine dining amidst nature's beauty.</Typography>
       </Box>
-      <AppBar position="fixed" sx={{ backgroundColor: '#451a61' }}>
+      <AppBar sx={{ backgroundColor: '#451a61' }}>
         <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           {/* Logo */}
           <Box
