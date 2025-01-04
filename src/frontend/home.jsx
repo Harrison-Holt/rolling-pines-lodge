@@ -2,7 +2,7 @@ import { AppBar, Container, Box, Button, Typography, TextField } from '@mui/mate
 import logo from '../assets/Rolling_Pines_Lodge_Logo.png'; 
 import { Home, MenuBook, Phone } from '@mui/icons-material';
 
-function Home() {
+function Homepage() {
 
     return (
         <Container className='body'>
@@ -29,4 +29,4 @@ function Home() {
     ); 
 }
 
-export default Home; 
+export default Homepage; 

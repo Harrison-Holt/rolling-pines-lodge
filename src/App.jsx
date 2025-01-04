@@ -1,10 +1,10 @@
-import Home from './frontend/home.jsx'; 
+import Homepage from './frontend/home.jsx'; 
 
 function App() {
 
   return (
     <>
-    <Home></Home>
+    <Homepage></Homepage>
     </>
   )
 }
