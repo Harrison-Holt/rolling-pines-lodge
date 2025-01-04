@@ -1,12 +1,11 @@
 import React from 'react';
 import { AppBar, Toolbar, Box, Button, Typography } from '@mui/material';
 import { Home, MenuBook } from '@mui/icons-material';
-import TableRestaurantIcon from '@mui/icons-material/TableRestaurant';
 import logo from '../assets/Rolling_Pines_Lodge_Logo.png';
 
 function Homepage() {
   return (
-    <>
+    <Container sx={{ backgroundColor: '967988'}}>
       <AppBar position="fixed" sx={{ backgroundColor: '#451a61' }}>
         <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           {/* Logo */}
@@ -42,7 +41,7 @@ function Homepage() {
         <Typography variant="h4">Welcome to Rolling Pines Lodge</Typography>
         <Typography variant="body1">Experience fine dining amidst nature's beauty.</Typography>
       </Box>
-    </>
+    </Container>
   );
 }
 
