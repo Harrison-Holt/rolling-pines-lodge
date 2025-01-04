@@ -41,7 +41,7 @@
     margin-right: auto;
   }
   
-  .body {
+  html {
     background-color: #967988;
     overflow-x: hidden;
   }
