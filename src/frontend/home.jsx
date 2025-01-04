@@ -7,6 +7,7 @@ import logo from '../assets/Rolling_Pines_Lodge_Logo.png';
 function Homepage() {
   return (
     <>
+    <Container className="body">
       <AppBar position="fixed" className="app-bar">
         <Toolbar className="toolbar">
           {/* Left Section: Logo */}
@@ -40,6 +41,7 @@ function Homepage() {
         <Typography variant="h4">Welcome to Rolling Pines Lodge</Typography>
         <Typography variant="body1">Experience fine dining amidst nature's beauty.</Typography>
       </Box>
+      </Container>
     </>
   );
 }
