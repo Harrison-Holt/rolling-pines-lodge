@@ -12,7 +12,6 @@ const events = [
     date: 'April 10, 2025',
     description: 'Explore a selection of fine wines from local vineyards.',
   },
-  // Add more events as needed
 ];
 
 function UpcomingEvents() {
