@@ -1,13 +1,19 @@
-import { AppBar, Container, Box, Button, Typography, TextField } from '@mui/material'; 
+import { AppBar, Container, Box, Button, Typography, TextField, Image } from '@mui/material'; 
 
 function Home() {
 
     return (
-        <AppBar>
-            <Typography variant='h1'>
-                Rolling Pines Lodge
-            </Typography>
+        <Container className='body'>
+        <AppBar className='header'>
+            <Box sx={{
+                height: '400px', 
+                backgroundImage: '../assets/Rolling_Pines_Lodge_Logo.png', 
+                backgroundSize: 'cover', 
+                backgroundPosition: 'center'
+            }}>
+            </Box>
         </AppBar>
+        </Container>
     ); 
 }
 
