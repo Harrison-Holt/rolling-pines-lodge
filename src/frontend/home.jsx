@@ -14,19 +14,16 @@ function Homepage() {
             component="img"
             src={logo}
             alt="Rolling Pines Lodge Logo"
-            sx={{ height: '75px', width: 'auto' }}
+            sx={{ height: '100px', width: '100' }}
           />
 
           {/* Navigation Links */}
-          <Box sx={{ display: 'flex', gap: 3 }}>
+          <Box sx={{ display: 'flex', justifyContent: 'flex-end', gap: 3 }}>
             <Button startIcon={<Home />} href="#" sx={{ color: '#f5f5f5', textTransform: 'none' }}>
               Home
             </Button>
             <Button startIcon={<MenuBook />} href="#" sx={{ color: '#f5f5f5', textTransform: 'none' }}>
               Menu
-            </Button>
-            <Button startIcon={<TableRestaurantIcon />} href="#" sx={{ color: '#f5f5f5', textTransform: 'none' }}>
-              Reservations
             </Button>
           </Box>
 
