@@ -115,6 +115,37 @@ const featuredDishes = [
             ))}
           </Grid>
         </Box>
+           {/* Upcoming Events Section */}
+      <Box sx={{ padding: 4, backgroundColor: '#f5f5f5' }}>
+        <Typography variant="h5" sx={{ textAlign: 'center', marginBottom: 4 }}>
+          Upcoming Events
+        </Typography>
+        <Grid container spacing={4} justifyContent="center">
+          {upcomingEvents.map((event, index) => (
+            <Grid item key={index} xs={12} sm={6} md={4}>
+              <Card sx={{ maxWidth: 345, margin: 'auto' }}>
+                <CardMedia
+                  component="img"
+                  height="200"
+                  image={event.image}
+                  alt={event.title}
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h6" component="div">
+                    {event.title}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {event.date}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {event.description}
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
+      </Box>
       </>
     );
   }
