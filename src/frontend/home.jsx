@@ -1,4 +1,5 @@
-import { AppBar, Container, Box, Button, Typography, TextField, Image } from '@mui/material'; 
+import { AppBar, Container, Box, Button, Typography, TextField } from '@mui/material'; 
+import logo from '../assets/Rolling_Pines_Lodge_Logo.png'; 
 
 function Home() {
 
@@ -7,7 +8,7 @@ function Home() {
         <AppBar className='header'>
             <Box sx={{
                 height: '400px', 
-                backgroundImage: '../assets/Rolling_Pines_Lodge_Logo.png', 
+                backgroundImage: `url(${logo})`, 
                 backgroundSize: 'cover', 
                 backgroundPosition: 'center'
             }}>
