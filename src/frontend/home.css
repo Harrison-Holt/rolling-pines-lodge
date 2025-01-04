@@ -37,12 +37,12 @@
     text-align: center;
     min-height: 100vh;
     width: 100vw;
-    margin-top: 50px; 
+    margin-top: 45px; 
     margin-left: auto;
     margin-right: auto;
   }
   
-  html {
+  html, body {
     background-color: #967988;
     overflow-x: hidden;
   }
