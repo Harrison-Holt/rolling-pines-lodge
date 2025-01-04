@@ -5,10 +5,9 @@ import logo from '../assets/Rolling_Pines_Lodge_Logo.png';
 
 function Homepage() {
   return (
-    <Container sx={{ backgroundColor: '#967988', width: '100%' }}>
+    <Container maxWidth={false} disableGutters sx={{ backgroundColor: '#967988', width: '100%' }}>
       <AppBar position="fixed" sx={{ backgroundColor: '#451a61' }}>
         <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-
           {/* Left Section: Logo */}
           <Box
             component="img"
@@ -17,8 +16,8 @@ function Homepage() {
             sx={{ height: '100px', width: '100px' }}
           />
 
-              {/* Right Section: Navigation Links and Button */}
-              <Box sx={{ display: 'flex', alignItems: 'center', gap: 3 }}>
+          {/* Right Section: Navigation Links and Button */}
+          <Box sx={{ display: 'flex', alignItems: 'center', gap: 3 }}>
             <Button startIcon={<Home />} href="#" sx={{ color: '#f5f5f5', textTransform: 'none' }}>
               Home
             </Button>
@@ -29,7 +28,6 @@ function Homepage() {
               Book Now
             </Button>
           </Box>
-
         </Toolbar>
       </AppBar>
 
