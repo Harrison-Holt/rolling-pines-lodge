@@ -10,13 +10,14 @@ function Homepage() {
       <AppBar position="fixed" sx={{ backgroundColor: '#451a61' }}>
         <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           {/* Logo */}
+          <Box>
           <Box
             component="img"
             src={logo}
             alt="Rolling Pines Lodge Logo"
             sx={{ height: '100px', width: '100px' }}
           />
-
+        </Box>
           {/* Navigation Links */}
           <Box sx={{ display: 'flex', justifyContent: 'flex-end', gap: 3 }}>
             <Button startIcon={<Home />} href="#" sx={{ color: '#f5f5f5', textTransform: 'none' }}>
