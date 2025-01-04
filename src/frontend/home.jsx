@@ -1,6 +1,6 @@
 import { AppBar, Container, Box, Button, Typography, TextField } from '@mui/material'; 
 import logo from '../assets/Rolling_Pines_Lodge_Logo.png'; 
-import { Home, MenuBook, Phone } from '@mui/icons-material';
+import { Home, MenuBook, TableRestaurantIcon } from '@mui/icons-material';
 
 function Homepage() {
 
@@ -21,8 +21,18 @@ function Homepage() {
                 justifyContent: 'space-around',
                 alignContent: 'center'
             }}>
+                <Card>
+                <Typography component='a' href='#'>Home</Typography>
+                <Home/>
+                </Card>
+                <Card>
                 <Typography component='a' href='#'>Menu</Typography>
                 <MenuBook/>
+                </Card>
+                <Card>
+                <Typography component='a' href='#'>Reservations</Typography>
+                <TableRestaurantIcon/>
+                </Card>
             </Box>
         </AppBar>
         </Container>
