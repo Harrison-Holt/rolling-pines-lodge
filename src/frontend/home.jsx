@@ -8,8 +8,8 @@ import hero_section_image from '../assets/Hero_Section_Background_Image.png';
 function Homepage() {
   return (
     <>
-      <AppBar position="fixed" className="app-bar">
-        <Toolbar className="toolbar">
+      <AppBar position="fixed" sx={{ backgroundColor: '#451a61', paddingLeft: 0, paddingRight: 0 }}>
+      <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingLeft: 0, paddingRight: 0 }}>
           {/* Left Section: Logo */}
           <Box
             component="img"

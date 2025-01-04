@@ -8,8 +8,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #451a61;
-    padding-left: 0; 
-    padding-right: 0; 
+    
   }
   
   .logo {
@@ -50,8 +49,4 @@
   html, body {
     background-color: #967988;
     overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
   }
