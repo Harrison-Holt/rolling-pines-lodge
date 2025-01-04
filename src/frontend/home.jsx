@@ -1,31 +1,31 @@
 import React from 'react';
-import { Container, AppBar, Toolbar, Box, Button, Typography } from '@mui/material';
+import './styles.css'; // Adjust the path as necessary
+import { AppBar, Toolbar, Box, Button, Typography } from '@mui/material';
 import { Home, MenuBook } from '@mui/icons-material';
 import logo from '../assets/Rolling_Pines_Lodge_Logo.png';
 
 function Homepage() {
   return (
     <>
-      {/* AppBar and Toolbar for the header */}
-      <AppBar position="fixed" sx={{ backgroundColor: '#451a61' }}>
-        <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+      <AppBar position="fixed" className="app-bar">
+        <Toolbar className="toolbar">
           {/* Left Section: Logo */}
           <Box
             component="img"
             src={logo}
             alt="Rolling Pines Lodge Logo"
-            sx={{ height: '100px', width: '100px' }}
+            className="logo"
           />
 
           {/* Right Section: Navigation Links and Button */}
-          <Box sx={{ display: 'flex', alignItems: 'center', gap: 3 }}>
-            <Button startIcon={<Home />} href="#" sx={{ color: '#f5f5f5', textTransform: 'none' }}>
+          <Box className="nav-links">
+            <Button startIcon={<Home />} href="#" className="nav-button">
               Home
             </Button>
-            <Button startIcon={<MenuBook />} href="#" sx={{ color: '#f5f5f5', textTransform: 'none' }}>
+            <Button startIcon={<MenuBook />} href="#" className="nav-button">
               Menu
             </Button>
-            <Button variant="contained" color="secondary" sx={{ textTransform: 'none', fontWeight: 'bold' }}>
+            <Button variant="contained" color="secondary" className="book-now-button">
               Book Now
             </Button>
           </Box>
@@ -36,7 +36,7 @@ function Homepage() {
       <Toolbar />
 
       {/* Main Content */}
-      <Box sx={{ backgroundColor: '#967988', textAlign: 'center', mt: 4, minHeight: '100vh', width: '100vw', mx: 'auto' }}>
+      <Box className="main-content">
         <Typography variant="h4">Welcome to Rolling Pines Lodge</Typography>
         <Typography variant="body1">Experience fine dining amidst nature's beauty.</Typography>
       </Box>
