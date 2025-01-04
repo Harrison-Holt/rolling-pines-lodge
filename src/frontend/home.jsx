@@ -11,17 +11,14 @@ const menuItems = [
   {
     name: 'Grilled Salmon',
     description: 'Freshly grilled salmon with a side of vegetables.',
-    image: dish1Image,
   },
   {
     name: 'Steak Frites',
     description: 'Juicy steak served with crispy fries.',
-    image: dish2Image,
   },
   {
     name: 'Vegan Delight',
     description: 'A delightful mix of fresh vegetables and grains.',
-    image: dish3Image,
   },
 ];
 
