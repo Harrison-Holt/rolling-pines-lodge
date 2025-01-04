@@ -77,7 +77,7 @@ const featuredDishes = [
         </Box>
   
         {/* Featured Dishes Section */}
-        <Box sx={{ padding: 4, backgroundColor: '#fff' }}>
+        <Box sx={{ padding: 4, backgroundColor: '#967988' }}>
           <Typography variant="h5" sx={{ textAlign: 'center', marginBottom: 4 }}>
             Featured Dishes
           </Typography>
