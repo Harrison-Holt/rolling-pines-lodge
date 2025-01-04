@@ -40,6 +40,9 @@
     margin-top: 45px; 
     margin-left: auto;
     margin-right: auto;
+    background-image: '../assets/Hero_Section_Background_Image.png';
+    background-position: cover;
+    background-position: center;
   }
   
   html, body {
