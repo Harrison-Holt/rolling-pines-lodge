@@ -1,7 +1,7 @@
 import React from 'react';
 import { AppBar, Toolbar, Box, Button, Typography } from '@mui/material';
 import { Home, MenuBook } from '@mui/icons-material';
-import SwipeableViews from 'react-swipeable-views-v18';
+import { SwipeableViews } from 'react-swipeable-views-v18';
 import logo from '../assets/Rolling_Pines_Lodge_Logo.png';
 import hero_section_image from '../assets/Hero_Section_Background_Image.png';
 import './home.css';
