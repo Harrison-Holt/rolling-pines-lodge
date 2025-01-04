@@ -7,6 +7,7 @@ import heroSectionImage from '../assets/Hero_Section_Background_Image.png';
 import pizzaImage from '../assets/pizza.png';
 import chickenWafflesImage from '../assets/fried-chicken-waffles.png';
 import birdDogsImage from '../assets/bird-dog.png';
+import './home.css'; 
 
 const featuredDishes = [
     {
