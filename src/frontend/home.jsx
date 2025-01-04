@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppBar, Toolbar, Box, Button, Typography } from '@mui/material';
+import { Container, AppBar, Toolbar, Box, Button, Typography } from '@mui/material';
 import { Home, MenuBook } from '@mui/icons-material';
 import logo from '../assets/Rolling_Pines_Lodge_Logo.png';
 
