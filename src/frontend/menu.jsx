@@ -33,14 +33,14 @@ const featuredDishes = [
   function Menu() {
     return (
       <>
-        <AppBar position="fixed" sx={{ backgroundColor: '#451a61', paddingLeft: 0, paddingRight: 0 }}>
+        <AppBar position="fixed" sx={{ backgroundColor: '#451a61', paddingLeft: 0, paddingRight: 0, width: '100%'}}>
           <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingLeft: 0, paddingRight: 0 }}>
             {/* Left Section: Logo */}
             <Box
               component="img"
               src={logo}
               alt="Rolling Pines Lodge Logo"
-              sx={{ height: 100, width: 100, marginLeft: 0 }}
+              sx={{ height: '100%', width: '100%', marginLeft: 0 }}
             />
   
             {/* Right Section: Navigation Links and Button */}
@@ -69,8 +69,7 @@ const featuredDishes = [
           sx={{
             position: 'relative',
             height: '500px',
-            width: '100vw',
-            backgroundImage: `url(${heroSectionImage})`,
+            width: '100%',            backgroundImage: `url(${heroSectionImage})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             display: 'flex',
@@ -120,9 +119,9 @@ const featuredDishes = [
             ))}
           </Grid>
         </Box>
-        <AppBar position="static" sx={{ backgroundColor: '#231F20' }}>
+        <AppBar position="static" sx={{ backgroundColor: '#231F20', width: '100%'}}>
         <Toolbar sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-        <Box sx={{ color: '#f5f5f5', padding: 2, display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'flex-start'}}>
+        <Box sx={{ color: '#f5f5f5', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'flex-start'}}>
       {/* Address Section */}
       <Stack spacing={1} sx={{ marginBottom: 4, marginRight: 5 }}>
         <Typography variant="h5">Address</Typography>
