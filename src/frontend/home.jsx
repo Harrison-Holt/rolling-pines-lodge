@@ -1,5 +1,6 @@
 import React from 'react';
-import { AppBar, Toolbar, Box, Button, Typography, Card, CardMedia, CardContent, Grid, Stack, Link } from '@mui/material';
+import { Link as RouterLink } from 'react-router-dom';
+import { AppBar, Toolbar, Box, Button, Typography, Card, CardMedia, CardContent, Grid, Stack } from '@mui/material';
 import { Home, MenuBook } from '@mui/icons-material';
 import 'react-image-gallery/styles/css/image-gallery.css';
 import logo from '../assets/Rolling_Pines_Lodge_Logo.png';
@@ -47,13 +48,13 @@ const featuredDishes = [
   
             {/* Right Section: Navigation Links and Button */}
             <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-              <Button startIcon={<Home />} component={Link} to="/" sx={{ color: '#f5f5f5', textTransform: 'none' }}>
+              <Button startIcon={<Home />} component={RouterLink} to="/" sx={{ color: '#f5f5f5', textTransform: 'none' }}>
                 Home
               </Button>
-              <Button startIcon={<MenuBook />} component={Link} to="/Menu" sx={{ color: '#f5f5f5', textTransform: 'none' }}>
+              <Button startIcon={<MenuBook />} component={RouterLink} to="/Menu" sx={{ color: '#f5f5f5', textTransform: 'none' }}>
                 Menu
               </Button>
-              <Button startIcon={<ShoppingCartIcon />} component={Link} to="/Cart" sx={{ color: '#f5f5f5', textTransform: 'none' }}>
+              <Button startIcon={<ShoppingCartIcon />} component={RouterLink} to="/Cart" sx={{ color: '#f5f5f5', textTransform: 'none' }}>
                 Your Cart
               </Button>
               <Button variant="contained" color="secondary" sx={{ textTransform: 'none', fontWeight: 'bold', color: '#f5f5f5' }}>
