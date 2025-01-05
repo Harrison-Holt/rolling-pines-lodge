@@ -8,8 +8,8 @@ import pizzaImage from '../assets/pizza.png';
 import chickenWafflesImage from '../assets/fried-chicken-waffles.png';
 import birdDogsImage from '../assets/bird-dog.png';
 import UpcomingEvents from './event_section'; 
-import PhoneIcon from '@mui/icons-material/Phone';
-import InfoIcon from '@mui/icons-material/Info';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+
 import './home.css'; 
 
 const featuredDishes = [
@@ -51,6 +51,9 @@ const featuredDishes = [
               </Button>
               <Button startIcon={<MenuBook />} href="#" sx={{ color: '#f5f5f5', textTransform: 'none' }}>
                 Menu
+              </Button>
+              <Button startIcon={<ShoppingCartIcon />} href="#" sx={{ color: '#f5f5f5', textTransform: 'none' }}>
+                Your Cart
               </Button>
               <Button variant="contained" color="secondary" sx={{ textTransform: 'none', fontWeight: 'bold', color: '#f5f5f5' }}>
                 Book Now
