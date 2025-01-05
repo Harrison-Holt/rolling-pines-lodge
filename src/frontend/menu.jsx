@@ -11,23 +11,54 @@ import birdDogsImage from '../assets/bird-dog.png';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import './home.css'; 
 
-const featuredDishes = [
-    {
-      image: chickenWafflesImage,
-      title: 'Chicken & Waffles',
-      description: 'Crispy fried chicken served atop fluffy waffles, drizzled with maple syrup for a perfect blend of sweet and savory.',
-    },
-    {
-      image: birdDogsImage,
-      title: 'Bird Dogs',
-      description: 'Juicy chicken tenders nestled in a soft bun, topped with cheese and honey mustard, offering a delightful twist on the classic hot dog.',
-    },
-    {
-      image: pizzaImage,
-      title: 'Meatball Pizza',
-      description: 'A hearty pizza topped with savory meatballs, marinara sauce, and a blend of mozzarella and parmesan cheeses.',
-    },
-  ];
+const menuItems = {
+    Burgers: [
+      { name: 'Cheeseburger', price: 7.99 },
+      { name: 'Bacon Burger', price: 8.99 },
+      { name: 'Mushroom Burger', price: 8.99 },
+      { name: 'Turkey Burger', price: 7.99 },
+      { name: 'Veggie Burger', price: 9.99 }
+    ],
+    Pasta: [
+      { name: 'Spaghetti', price: 10.99 },
+      { name: 'Lasagna', price: 9.99 },
+      { name: 'Ravioli', price: 8.99 },
+      { name: 'Rigatoni', price: 10.99 }
+    ],
+    Sides: [
+      { name: 'Mac & Cheese', price: 3.99 },
+      { name: 'French Fries', price: 2.99 },
+      { name: 'Baked Potato', price: 3.99 },
+      { name: 'Corn on the Cob', price: 1.99 },
+      { name: 'Baked Beans', price: 2.99 },
+      { name: 'Bread', price: 1.99 }
+    ],
+    Pizza: [
+      { name: 'Cheese', price: 7.99 },
+      { name: 'Pepperoni', price: 8.99 },
+      { name: 'Sausage', price: 8.99 },
+      { name: 'Meatball', price: 8.99 },
+      { name: 'Ham', price: 8.99 },
+      { name: 'Two Topping', price: 12.99 },
+      { name: 'Three Topping', price: 14.99 }
+    ],
+    Drinks: [
+      { name: 'Sodas', price: 1.99 },
+      { name: 'Milkshake', price: 3.99 }
+    ],
+    Chicken: [
+      { name: 'Chicken Tenders', price: 8.99 },
+      { name: 'Chicken & Waffles', price: 10.99 },
+      { name: 'Crispy Chicken Sandwich', price: 7.99 },
+      { name: 'Grilled Chicken Sandwich', price: 8.99 }
+    ],
+    'Bird Dogs': [
+      { name: 'Single', price: 7.99 },
+      { name: 'Double', price: 10.99 },
+      { name: 'Triple', price: 14.99 }
+    ]
+  };
+  
   
   
   function Menu() {
