@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Box, Typography, Card, CardContent, CardMedia, Grid } from '@mui/material';
 import jazz_photo from '../assets/jazz.jpg';
 import wine_photo from '../assets/wine.jpg';
-
+import './home.css'
 const events = [
   {
     image: jazz_photo,
@@ -87,12 +87,12 @@ function UpcomingEvents() {
                   <Typography variant="body2" color="text.secondary">
                     {event.description}
                   </Typography>
-                  <button style={backgroundColor= "#967988"}
+                  <Button sx={{ backgroundColor: "#967988"}}
                     className="atcb-button"
                     onClick={() => toggleDropdown(index)}
                   >
                     Add to Calendar
-                  </button>
+                  </Button>
                   {dropdownOpen === index && (
                     <div className="atcb-list" style={ margin= '15px'}>
                       <a href={calendarLinks.google} target="_blank" rel="noopener noreferrer">
