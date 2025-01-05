@@ -88,7 +88,7 @@ function UpcomingEvents() {
                   <Typography variant="body2" color="text.secondary">
                     {event.description}
                   </Typography>
-                  <Button variant="contained" color="secondary" sx={{ textTransform: 'none', fontWeight: 'bold', color: '#f5f5f5' }}
+                  <Button variant="contained" color="secondary" sx={{ textTransform: 'none', fontWeight: 'bold', color: '#f5f5f5', marginTop: '15px' }}
                     className="atcb-button"
                     onClick={() => toggleDropdown(index)}
                   >
