@@ -33,7 +33,7 @@ const featuredDishes = [
   function Menu() {
     return (
       <>
-        <AppBar position="fixed" sx={{ backgroundColor: '#451a61', paddingLeft: 0, paddingRight: 0, width: '100%'}}>
+        <AppBar position="fixed" sx={{ backgroundColor: '#451a61', paddingLeft: 0, paddingRight: 0}}>
           <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingLeft: 0, paddingRight: 0 }}>
             {/* Left Section: Logo */}
             <Box
@@ -63,30 +63,6 @@ const featuredDishes = [
   
         {/* Offset to prevent content from being hidden behind the AppBar */}
         <Toolbar />
-  
-        {/* Hero Section */}
-        <Box
-          sx={{
-            position: 'relative',
-            height: '500px',
-            width: '100%',            backgroundImage: `url(${heroSectionImage})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            color: '#fff',
-            textAlign: 'center',
-          }}
-        >
-          <Box sx={{ position: 'relative', zIndex: 1 }}>
-            <Typography variant="h4">Welcome to Rolling Pines Lodge</Typography>
-            <Typography variant="body1">Experience fine dining amidst nature's beauty.</Typography>
-            <Button variant="contained" color="secondary" sx={{ color: '#f5f5f5', marginTop: '25px' }}>
-              Book A Table
-            </Button>
-          </Box>
-        </Box>
   
         {/* Featured Dishes Section */}
         <Box sx={{ padding: 4, backgroundColor: '#967988' }}>
