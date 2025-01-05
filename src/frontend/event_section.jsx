@@ -1,7 +1,6 @@
 import React from 'react';
 import { Box, Typography, Card, CardContent, CardMedia, Grid } from '@mui/material';
 import { AddToCalendarButton } from 'add-to-calendar-button-react';
-import 'add-to-calendar-button-react/dist/styles.css'; 
 import jazz_photo from '../assets/jazz.jpg';
 import wine_photo from '../assets/wine.jpg';
 
