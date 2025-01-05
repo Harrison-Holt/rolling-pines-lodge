@@ -65,7 +65,7 @@ const featuredDishes = [
         {/* Offset to prevent content from being hidden behind the AppBar */}
         <Toolbar />
   
-        <Box sx={{ display: 'flex', alignItems: 'center', height: '100vh', backgroundColor: '#967988'}}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-around', alignItems: 'center', height: '100vh', backgroundColor: '#967988', color: '#f5f5f5'}}>
             <Typography variant='h2'>Your Cart</Typography>
         </Box>
   
