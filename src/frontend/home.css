@@ -56,7 +56,3 @@
   .card:hover {
     transform: scale(1.05);
   }
-
-  .atcb-list {
-    padding: 25px; 
-  }

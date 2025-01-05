@@ -99,9 +99,11 @@ function UpcomingEvents() {
                       <a href={calendarLinks.google} target="_blank" rel="noopener noreferrer">
                         Google Calendar
                       </a>
+                      <br/>
                       <a href={calendarLinks.outlook} target="_blank" rel="noopener noreferrer">
                         Outlook Calendar
                       </a>
+                      <br/>
                       <a href={calendarLinks.yahoo} target="_blank" rel="noopener noreferrer">
                         Yahoo Calendar
                       </a>
