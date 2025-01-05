@@ -1,6 +1,6 @@
 import React from 'react';
 import { useRoutes } from 'react-router-dom';
-import Homepage from './Homepage';
+import Homepage from './frontend/home.jsx';
 import Menu from './Menu';
 import Cart from './frontend/cart.jsx'; 
 
