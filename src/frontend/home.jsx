@@ -123,6 +123,7 @@ const featuredDishes = [
           </Grid>
         </Box>
         <UpcomingEvents />
+        <Testimonials/>
         <AppBar position="static" sx={{ backgroundColor: '#231F20' }}>
         <Toolbar sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <Box sx={{ color: '#f5f5f5', padding: 2, display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'flex-start'}}>
@@ -151,7 +152,6 @@ const featuredDishes = [
     </Box>
         </Toolbar>
       </AppBar>
-      <Testimonials/>
       </>
     );
   }

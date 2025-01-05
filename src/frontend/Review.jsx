@@ -1,14 +1,18 @@
 import React from 'react';
 import { Box, Typography, Card, CardContent, Avatar, Grid } from '@mui/material';
+import critic from '../assets/food_critic.jpg'; 
+import blogger from '../assets/blogger.jpg'; 
 
 const testimonials = [
   {
     name: 'John Doe',
+    image: critic,
     title: 'Food Critic',
     review: 'The ambiance and cuisine at Rolling Pines Lodge are exceptional. A must-visit!',
   },
   {
     name: 'Jane Smith',
+    image: blogger,
     title: 'Travel Blogger',
     review: 'An unforgettable dining experience nestled in nature. Highly recommend!',
   },
@@ -16,7 +20,7 @@ const testimonials = [
 
 function Testimonials() {
   return (
-    <Box sx={{ padding: 4, backgroundColor: '#f5f5f5' }}>
+    <Box sx={{ padding: 4, backgroundColor: '#967988', color: '#f5f5f5' }}>
       <Typography variant="h5" sx={{ textAlign: 'center', marginBottom: 4 }}>
         What Our Guests Are Saying
       </Typography>
