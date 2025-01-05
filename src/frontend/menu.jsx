@@ -63,9 +63,9 @@ const featuredDishes = [
   
       {/* Offset to prevent content from being hidden behind the AppBar */}
           <Toolbar />
-          
+
         {/* Featured Dishes Section */}
-        <Box sx={{ padding: 4, backgroundColor: '#967988' }}>
+        <Box sx={{ padding: 4, backgroundColor: '#967988', height: '100vh'}}>
           <Typography variant="h5" sx={{ textAlign: 'center', marginBottom: 4 }}>
             Featured Dishes
           </Typography>
