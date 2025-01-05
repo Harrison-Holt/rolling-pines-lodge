@@ -122,51 +122,28 @@ const featuredDishes = [
         <AppBar position="static" sx={{ backgroundColor: '#231F20' }}>
         <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <Box sx={{ color: '#f5f5f5', padding: 2 }}>
-      <Stack spacing={2}>
-        <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-          <PhoneIcon />
-          <Typography variant="h5">Contact Us</Typography>
-        </Box>
-        <Typography variant="body1">
-          1234 Woodland Retreat Drive
-        </Typography>
-        <Typography variant="body1">
-          Whispering Pines, CA 90210
-        </Typography>
-        <Typography variant="body1">
-          (555) 123-4567
-        </Typography>
-        <Typography variant="body1">
-          info@rollingpineslodge.com
-        </Typography>
-        <Typography variant="body1">
-          <strong>Operating Hours:</strong>
-        </Typography>
-        <Typography variant="body1">
-          Monday to Friday: 11:00 AM - 10:00 PM
-        </Typography>
-        <Typography variant="body1">
-          Saturday and Sunday: 11:00 AM - 11:00 PM
-        </Typography>
-        <Typography variant="body1">
-          <strong>Social Media:</strong>
-        </Typography>
-        <Typography variant="body1">
-          Facebook: facebook.com/rollingpineslodge
-        </Typography>
-        <Typography variant="body1">
-          Instagram: @rollingpineslodge
-        </Typography>
-        <Typography variant="body1">
-          Twitter: @rollpineslodge
-        </Typography>
-        <Button
-          startIcon={<InfoIcon />}
-          href="#"
-          sx={{ color: '#f5f5f5', textTransform: 'none' }}
-        >
-          About Us
-        </Button>
+      {/* Address Section */}
+      <Stack spacing={1} sx={{ marginBottom: 4 }}>
+        <Typography variant="h6">Address</Typography>
+        <Typography variant="body1">1234 Woodland Retreat Drive</Typography>
+        <Typography variant="body1">Whispering Pines, CA 90210</Typography>
+        <Typography variant="body1">(555) 123-4567</Typography>
+        <Typography variant="body1">info@rollingpineslodge.com</Typography>
+      </Stack>
+
+      {/* Operating Hours Section */}
+      <Stack spacing={1} sx={{ marginBottom: 4 }}>
+        <Typography variant="h6">Operating Hours</Typography>
+        <Typography variant="body1">Monday to Friday: 11:00 AM - 10:00 PM</Typography>
+        <Typography variant="body1">Saturday and Sunday: 11:00 AM - 11:00 PM</Typography>
+      </Stack>
+
+      {/* Social Media Section */}
+      <Stack spacing={1}>
+        <Typography variant="h6">Social Media</Typography>
+        <Typography variant="body1">Facebook: facebook.com/rollingpineslodge</Typography>
+        <Typography variant="body1">Instagram: @rollingpineslodge</Typography>
+        <Typography variant="body1">Twitter: @rollpineslodge</Typography>
       </Stack>
     </Box>
         </Toolbar>
