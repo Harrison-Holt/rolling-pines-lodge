@@ -2,6 +2,9 @@ import React from 'react';
 import { Box, Typography, Card, CardContent, Avatar, Grid } from '@mui/material';
 import critic from '../assets/food_critic.jpg'; 
 import blogger from '../assets/blogger.jpg'; 
+import planner from '../assets/planner.jpg'; 
+import food_guy from '../assets/food_guy.jpg'; 
+import food_blogger from '../assets/food_blogger.jpg'; 
 
 const testimonials = [
   {
@@ -15,6 +18,24 @@ const testimonials = [
     image: blogger,
     title: 'Travel Blogger',
     review: 'An unforgettable dining experience nestled in nature. Highly recommend!',
+  },
+  {
+    name: 'Michael Brown',
+    title: 'Culinary Enthusiast',
+    image: food_guy,
+    review: 'A hidden gem with exquisite dishes and top-notch service. Will return soon!',
+  },
+  {
+    name: 'Emily Davis',
+    title: 'Event Planner',
+    image: planner,
+    review: 'Perfect venue for events with a delightful menu and serene environment.',
+  },
+  {
+    name: 'David Wilson',
+    title: 'Food Blogger',
+    image: food_blogger,
+    review: 'Innovative flavors and a cozy atmosphere. Rolling Pines Lodge stands out!',
   },
 ];
 
