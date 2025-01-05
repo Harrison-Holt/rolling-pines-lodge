@@ -80,7 +80,7 @@ function UpcomingEvents() {
                   image={event.image}
                   alt={event.title}
                 />
-                <CardContent>
+                <CardContent sx={{ display: 'flex', flexDirection: 'column', alignItems: 'cemter'}}>
                   <Typography variant="h6">{event.title}</Typography>
                   <Typography variant="body2" color="text.secondary">
                     {new Date(event.date).toLocaleDateString()} at {event.time}
