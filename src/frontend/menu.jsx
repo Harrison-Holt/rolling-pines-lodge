@@ -33,14 +33,14 @@ const featuredDishes = [
   function Menu() {
     return (
       <>
-        <AppBar position="fixed" sx={{ backgroundColor: '#451a61', paddingLeft: 0, paddingRight: 0}}>
+       <AppBar position="fixed" sx={{ backgroundColor: '#451a61', paddingLeft: 0, paddingRight: 0 }}>
           <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingLeft: 0, paddingRight: 0 }}>
             {/* Left Section: Logo */}
             <Box
               component="img"
               src={logo}
               alt="Rolling Pines Lodge Logo"
-              sx={{ height: '100%', width: '100%', marginLeft: 0 }}
+              sx={{ height: 100, width: 100, marginLeft: 0 }}
             />
   
             {/* Right Section: Navigation Links and Button */}
@@ -61,9 +61,9 @@ const featuredDishes = [
           </Toolbar>
         </AppBar>
   
-        {/* Offset to prevent content from being hidden behind the AppBar */}
-        <Toolbar />
-  
+      {/* Offset to prevent content from being hidden behind the AppBar */}
+          <Toolbar />
+          
         {/* Featured Dishes Section */}
         <Box sx={{ padding: 4, backgroundColor: '#967988' }}>
           <Typography variant="h5" sx={{ textAlign: 'center', marginBottom: 4 }}>
