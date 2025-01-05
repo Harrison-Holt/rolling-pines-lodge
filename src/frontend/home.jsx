@@ -121,7 +121,7 @@ const featuredDishes = [
         <UpcomingEvents />
         <AppBar position="static" sx={{ backgroundColor: '#231F20' }}>
         <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <Box sx={{ color: '#f5f5f5', padding: 2 }}>
+        <Box sx={{ color: '#f5f5f5', padding: 2, display: 'flex', flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center'}}>
       {/* Address Section */}
       <Stack spacing={1} sx={{ marginBottom: 4 }}>
         <Typography variant="h6">Address</Typography>
