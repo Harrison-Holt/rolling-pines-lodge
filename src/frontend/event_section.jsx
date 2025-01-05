@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { Box, Button, Typography, Card, CardContent, CardMedia, Grid } from '@mui/material';
 import jazz_photo from '../assets/jazz.jpg';
 import wine_photo from '../assets/wine.jpg';
-import './home.css'
+import './home.css'; 
+
 const events = [
   {
     image: jazz_photo,
