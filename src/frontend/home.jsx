@@ -123,9 +123,26 @@ const featuredDishes = [
         <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           {/* Right Section: Navigation Links and Button */}
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-            <Button startIcon={<PhoneIcon />} href="#" sx={{ color: '#f5f5f5', textTransform: 'none' }}>
-              Contact Us
-            </Button>
+            <Box startIcon={<PhoneIcon />} href="#" sx={{ color: '#f5f5f5', textTransform: 'none' }}>
+              <Typography variant="h3">Contact Us</Typography>
+              <Typography variant="p">
+              1234 Woodland Retreat Drive
+              Whispering Pines, CA 90210
+              (555) 123-4567
+              info@rollingpineslodge.com
+
+              Operating Hours:
+                Monday to Friday: 11:00 AM - 10:00 PM
+                Saturday and Sunday: 11:00 AM - 11:00 PM
+
+                Social Media:
+
+                Facebook: facebook.com/rollingpineslodge
+                Instagram: @rollingpineslodge
+                Twitter: @rollpineslodge
+              </Typography>
+
+            </Box>
             <Button startIcon={<InfoIcon />} href="#" sx={{ color: '#f5f5f5', textTransform: 'none' }}>
               About Us
             </Button>
