@@ -120,14 +120,14 @@ const featuredDishes = [
         </Box>
         <UpcomingEvents />
         <AppBar position="static" sx={{ backgroundColor: '#231F20' }}>
-        <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <Box sx={{ color: '#f5f5f5', padding: 2, display: 'flex', flexDirection: 'row', justifyContent: 'space-around', alignItems: 'flex-start'}}>
+        <Toolbar sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <Box sx={{ color: '#f5f5f5', padding: 2, display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'flex-start'}}>
       {/* Address Section */}
       <Stack spacing={1} sx={{ marginBottom: 4, marginRight: 5 }}>
         <Typography variant="h5">Address</Typography>
-        <Typography variant="body1" component="a">1234 Woodland Retreat Drive, Whispering Pines, CA 90210</Typography>
-        <Typography variant="body1" component="a">(555) 123-4567</Typography>
-        <Typography variant="body1" component="a">info@rollingpineslodge.com</Typography>
+        <Typography variant="body1" component="a" href="#">1234 Woodland Retreat Drive, Whispering Pines, CA 90210</Typography>
+        <Typography variant="body1">(555) 123-4567</Typography>
+        <Typography variant="body1" component="a" href="mailto:info@rollingpineslodge.com">info@rollingpineslodge.com</Typography>
       </Stack>
 
       {/* Operating Hours Section */}
@@ -140,9 +140,9 @@ const featuredDishes = [
       {/* Social Media Section */}
       <Stack spacing={1}>
         <Typography variant="h5">Social Media</Typography>
-        <Typography variant="body1" component="a">Facebook: facebook.com/rollingpineslodge</Typography>
-        <Typography variant="body1" component="a">Instagram: @rollingpineslodge</Typography>
-        <Typography variant="body1" component="a">Twitter: @rollpineslodge</Typography>
+        <Typography variant="body1" component="a" href="https://www.facebook.com/">Facebook: facebook.com/rollingpineslodge</Typography>
+        <Typography variant="body1" component="a" href="https://www.instagram.com/">Instagram: @rollingpineslodge</Typography>
+        <Typography variant="body1" component="a" href="https://www.twitter.com/">Twitter: @rollpineslodge</Typography>
       </Stack>
     </Box>
         </Toolbar>
