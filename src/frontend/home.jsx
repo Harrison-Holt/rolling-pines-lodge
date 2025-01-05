@@ -123,27 +123,26 @@ const featuredDishes = [
         <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <Box sx={{ color: '#f5f5f5', padding: 2, display: 'flex', flexDirection: 'row', justifyContent: 'space-around', alignItems: 'flex-start'}}>
       {/* Address Section */}
-      <Stack spacing={1} sx={{ marginBottom: 4 }}>
-        <Typography variant="h6">Address</Typography>
-        <Typography variant="body1">1234 Woodland Retreat Drive</Typography>
-        <Typography variant="body1">Whispering Pines, CA 90210</Typography>
-        <Typography variant="body1">(555) 123-4567</Typography>
-        <Typography variant="body1">info@rollingpineslodge.com</Typography>
+      <Stack spacing={1} sx={{ marginBottom: 4, marginRight: 5 }}>
+        <Typography variant="h5">Address</Typography>
+        <Typography variant="body1" component="a">1234 Woodland Retreat Drive, Whispering Pines, CA 90210</Typography>
+        <Typography variant="body1" component="a">(555) 123-4567</Typography>
+        <Typography variant="body1" component="a">info@rollingpineslodge.com</Typography>
       </Stack>
 
       {/* Operating Hours Section */}
-      <Stack spacing={1} sx={{ marginBottom: 4 }}>
-        <Typography variant="h6">Operating Hours</Typography>
+      <Stack spacing={1} sx={{ marginBottom: 4, marginRight: 5}}>
+        <Typography variant="h5">Operating Hours</Typography>
         <Typography variant="body1">Monday to Friday: 11:00 AM - 10:00 PM</Typography>
         <Typography variant="body1">Saturday and Sunday: 11:00 AM - 11:00 PM</Typography>
       </Stack>
 
       {/* Social Media Section */}
       <Stack spacing={1}>
-        <Typography variant="h6">Social Media</Typography>
-        <Typography variant="body1">Facebook: facebook.com/rollingpineslodge</Typography>
-        <Typography variant="body1">Instagram: @rollingpineslodge</Typography>
-        <Typography variant="body1">Twitter: @rollpineslodge</Typography>
+        <Typography variant="h5">Social Media</Typography>
+        <Typography variant="body1" component="a">Facebook: facebook.com/rollingpineslodge</Typography>
+        <Typography variant="body1" component="a">Instagram: @rollingpineslodge</Typography>
+        <Typography variant="body1" component="a">Twitter: @rollpineslodge</Typography>
       </Stack>
     </Box>
         </Toolbar>
