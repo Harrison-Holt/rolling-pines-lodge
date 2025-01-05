@@ -1,17 +1,17 @@
-import Homepage from './frontend/home.jsx'; 
-import { Routes, Route } from 'react-router-dom';
-import Menu from './frontend/menu.jsx';
+import React from 'react';
+import { useRoutes } from 'react-router-dom';
+import Homepage from './Homepage';
+import Menu from './Menu';
 import Cart from './frontend/cart.jsx'; 
 
 function App() {
+  const routes = useRoutes([
+    { path: '/', element: <Homepage /> },
+    { path: '/menu', element: <Menu /> },
+    { path: '/cart', element: <Cart/>}
+  ]);
 
-  return (
-    <Routes>
-    <Route path="/" element={<Homepage />} />
-    <Route path="/menu" element={<Menu />} />
-    <Route path="/cart" element={<Cart />} />
-    </Routes>
-  )
+  return routes;
 }
 
-export default App
+export default App;
