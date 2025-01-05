@@ -3,6 +3,9 @@ import { Box, Button, Typography, Card, CardContent, CardMedia, Grid } from '@mu
 import jazz_photo from '../assets/jazz.jpg';
 import wine_photo from '../assets/wine.jpg';
 import './home.css'; 
+import summer_solstice_photo from '../assets/summer_solstice_photo.jpeg'; 
+import cooking_workshop_photo from '../assets/cooking_workshop_photo.jpg'; 
+import movie_night_photo from '../assets/movie_night_photo.jpg'; 
 
 const events = [
   {
@@ -20,6 +23,24 @@ const events = [
     time: '2:00pm',
     description: 'Explore a selection of fine wines from local vineyards.',
     location: 'Rolling Pines Lodge, Whispering Pines, CA',
+  },
+  {
+    image: cooking_workshop_photo,
+    title: 'Gourmet Cooking Workshop',
+    date: 'May 5, 2025',
+    description: 'Join our head chef for an interactive cooking workshop where you\'ll learn to prepare a three-course gourmet meal. Perfect for food enthusiasts of all skill levels.',
+  },
+  {
+    image: movie_night_photo,
+    title: 'Outdoor Movie Night',
+    date: 'June 15, 2025',
+    description: 'Enjoy a classic film under the stars in our beautiful garden area. Complimentary popcorn and beverages will be provided. Bring your own blanket!',
+  },
+  {
+    image: summer_solstice_photo,
+    title: 'Summer Solstice Celebration',
+    date: 'June 21, 2025',
+    description: 'Celebrate the longest day of the year with live music, a special summer menu, and festivities for all ages. A perfect way to kick off the summer season.',
   },
 ];
 
