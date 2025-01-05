@@ -87,14 +87,14 @@ function UpcomingEvents() {
                   <Typography variant="body2" color="text.secondary">
                     {event.description}
                   </Typography>
-                  <Button sx={{ backgroundColor: "#967988"}}
+                  <Button color="secondary" sx={{ color: '#f5f5f5'}}
                     className="atcb-button"
                     onClick={() => toggleDropdown(index)}
                   >
                     Add to Calendar
                   </Button>
                   {dropdownOpen === index && (
-                    <div className="atcb-list" style={ margin= '15px'}>
+                    <div className="atcb-list" >
                       <a href={calendarLinks.google} target="_blank" rel="noopener noreferrer">
                         Google Calendar
                       </a>

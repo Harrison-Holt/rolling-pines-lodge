@@ -9,8 +9,6 @@ import chickenWafflesImage from '../assets/fried-chicken-waffles.png';
 import birdDogsImage from '../assets/bird-dog.png';
 import UpcomingEvents from './event_section'; 
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import jazz_photo from '../assets/jazz.jpg'; 
-import wine_photo from '../assets/wine.jpg'; 
 
 import './home.css'; 
 
