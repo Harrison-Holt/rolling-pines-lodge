@@ -94,7 +94,7 @@ function UpcomingEvents() {
                     Add to Calendar
                   </button>
                   {dropdownOpen === index && (
-                    <div className="atcb-list">
+                    <div className="atcb-list" style={ margin= '15px'}>
                       <a href={calendarLinks.google} target="_blank" rel="noopener noreferrer">
                         Google Calendar
                       </a>
