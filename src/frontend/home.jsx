@@ -140,7 +140,7 @@ const featuredDishes = [
       {/* Social Media Section */}
       <Stack spacing={1}>
         <Typography variant="h5">Social Media</Typography>
-        <Typography variant="body1" component="a" href="https://www.facebook.com/">Facebook: facebook.com/rollingpineslodge</Typography>
+        <Typography variant="body1" component="a" href="https://www.facebook.com/">Facebook: @rollpineslodge</Typography>
         <Typography variant="body1" component="a" href="https://www.instagram.com/">Instagram: @rollingpineslodge</Typography>
         <Typography variant="body1" component="a" href="https://www.twitter.com/">Twitter: @rollpineslodge</Typography>
       </Stack>
