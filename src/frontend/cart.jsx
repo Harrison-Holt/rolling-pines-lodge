@@ -43,7 +43,7 @@ function Cart() {
       const calculateTotal = () => {
         return cartItems.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2);
       };
-      
+
     return (
       <>
         <AppBar position="fixed" sx={{ backgroundColor: '#451a61', paddingLeft: 0, paddingRight: 0 }}>
@@ -77,7 +77,7 @@ function Cart() {
         {/* Offset to prevent content from being hidden behind the AppBar */}
         <Toolbar />
   
-        <Box sx={{ padding: 4 }}>
+        <Box sx={{ padding: 4, height: '100vh', color: '#f5f5f5'}}>
       <Typography variant="h4" gutterBottom>
         Your Cart
       </Typography>
