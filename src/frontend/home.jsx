@@ -94,7 +94,7 @@ const featuredDishes = [
   
         {/* Featured Dishes Section */}
         <Box sx={{ padding: 4, backgroundColor: '#967988' }}>
-          <Typography variant="h5" sx={{ textAlign: 'center', marginBottom: 4 }}>
+          <Typography variant="h5" sx={{ textAlign: 'center', marginBottom: 4, marginTop: 5, color: '#f5f5f5'}}>
             Featured Dishes
           </Typography>
           <Grid container spacing={4} justifyContent="center">
