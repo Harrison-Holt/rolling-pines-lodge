@@ -1,13 +1,17 @@
 import React from 'react';
 import { Box, Typography, Card, CardContent, CardMedia, Grid } from '@mui/material';
+import jazz_photo from '../assets/jazz.jpg'; 
+import wine_photo from '../assets/wine.jpg'; 
 
 const events = [
   {
+    image: jazz_photo,
     title: 'Live Jazz Night',
     date: 'March 25, 2025',
     description: 'Join us for an evening of live jazz music with renowned artists.',
   },
   {
+    image: wine_photo, 
     title: 'Spring Wine Tasting',
     date: 'April 10, 2025',
     description: 'Explore a selection of fine wines from local vineyards.',
