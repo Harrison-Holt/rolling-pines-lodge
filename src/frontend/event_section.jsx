@@ -87,7 +87,7 @@ function UpcomingEvents() {
                   <Typography variant="body2" color="text.secondary">
                     {event.description}
                   </Typography>
-                  <button
+                  <button style={backgroundColor= "#967988"}
                     className="atcb-button"
                     onClick={() => toggleDropdown(index)}
                   >
