@@ -123,22 +123,50 @@ const featuredDishes = [
         <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           {/* Right Section: Navigation Links and Button */}
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-            <Box startIcon={<PhoneIcon />} href="#" sx={{ color: '#f5f5f5', textTransform: 'none' }}>
-              <Typography variant="h3">Contact Us</Typography>
+            <Box startIcon={<PhoneIcon />} href="#" sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-around', alignContent: 'center', color: '#f5f5f5', textTransform: 'none' }}>
+              <Typography variant="h6">Contact Us</Typography>
               <Typography variant="p">
               1234 Woodland Retreat Drive
+              </Typography>
+
+              <Typography variant="p">
               Whispering Pines, CA 90210
+              </Typography>
+
+              <Typography variant="p">
               (555) 123-4567
+              </Typography>
+
+              <Typography variant="p">
               info@rollingpineslodge.com
+              </Typography>
 
+              <Typography variant="p">
               Operating Hours:
+              </Typography>
+
+              <Typography variant="p">
                 Monday to Friday: 11:00 AM - 10:00 PM
+                </Typography>
+
+                <Typography variant="p">
                 Saturday and Sunday: 11:00 AM - 11:00 PM
+                </Typography>
 
+                <Typography variant="p">
                 Social Media:
+                </Typography>
 
+                <Typography variant="p">
                 Facebook: facebook.com/rollingpineslodge
+                </Typography>
+
+                <Typography variant="p">
                 Instagram: @rollingpineslodge
+                </Typography>
+
+                <Typography variant="p">
+
                 Twitter: @rollpineslodge
               </Typography>
 
