@@ -27,18 +27,21 @@ const events = [
   {
     image: cooking_workshop_photo,
     title: 'Gourmet Cooking Workshop',
+    time: '11:00pm',
     date: 'May 5, 2025',
     description: 'Join our head chef for an interactive cooking workshop where you\'ll learn to prepare a three-course gourmet meal. Perfect for food enthusiasts of all skill levels.',
   },
   {
     image: movie_night_photo,
     title: 'Outdoor Movie Night',
+    time: '8:00pm',
     date: 'June 15, 2025',
     description: 'Enjoy a classic film under the stars in our beautiful garden area. Complimentary popcorn and beverages will be provided. Bring your own blanket!',
   },
   {
     image: summer_solstice_photo,
     title: 'Summer Solstice Celebration',
+    time: '6:00pm',
     date: 'June 21, 2025',
     description: 'Celebrate the longest day of the year with live music, a special summer menu, and festivities for all ages. A perfect way to kick off the summer season.',
   },
