@@ -65,62 +65,11 @@ const featuredDishes = [
         {/* Offset to prevent content from being hidden behind the AppBar */}
         <Toolbar />
   
-        {/* Hero Section */}
-        <Box
-          sx={{
-            position: 'relative',
-            height: '500px',
-            width: '100vw',
-            backgroundImage: `url(${heroSectionImage})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            color: '#fff',
-            textAlign: 'center',
-          }}
-        >
-          <Box sx={{ position: 'relative', zIndex: 1 }}>
-            <Typography variant="h4">Welcome to Rolling Pines Lodge</Typography>
-            <Typography variant="body1">Experience fine dining amidst nature's beauty.</Typography>
-            <Button variant="contained" color="secondary" sx={{ color: '#f5f5f5', marginTop: '25px' }}>
-              Book A Table
-            </Button>
-          </Box>
+        <Box sx={{ display: 'flex', alignItems: 'center', height: '100vh', backgroundColor: '#967988'}}>
+            <Typography variant='h2'>Your Cart</Typography>
         </Box>
   
-        {/* Featured Dishes Section */}
-        <Box sx={{ padding: 4, backgroundColor: '#967988' }}>
-          <Typography variant="h5" sx={{ textAlign: 'center', marginBottom: 4 }}>
-            Featured Dishes
-          </Typography>
-          <Grid container spacing={4} justifyContent="center">
-            {featuredDishes.map((dish, index) => (
-              <Grid item key={index} xs={12} sm={6} md={4}>
-                <Card sx={{ maxWidth: 345, margin: 'auto'}} className='card'>
-                  <CardMedia
-                    component="img"
-                    height="200"
-                    image={dish.image}
-                    alt={dish.title}
-                  />
-                  <CardContent sx={{display: 'flex', flexDirection: 'column', alignContent: 'center'}}>
-                    <Typography gutterBottom variant="h6" component="div">
-                      {dish.title}
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      {dish.description}
-                    </Typography>
-                    <Button variant="contained" color="secondary" sx={{ color: '#f5f5f5', marginTop: '25px' }}>
-                        Add To Cart
-                     </Button>
-                  </CardContent>
-                </Card>
-              </Grid>
-            ))}
-          </Grid>
-        </Box>
+       
         <AppBar position="static" sx={{ backgroundColor: '#231F20' }}>
         <Toolbar sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <Box sx={{ color: '#f5f5f5', padding: 2, display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'flex-start'}}>
