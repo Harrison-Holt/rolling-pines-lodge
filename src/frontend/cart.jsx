@@ -1,37 +1,49 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 import { AppBar, Toolbar, Box, Button, Typography, Card, CardMedia, CardContent, Grid, Stack, Link } from '@mui/material';
 import { Home, MenuBook } from '@mui/icons-material';
 import 'react-image-gallery/styles/css/image-gallery.css';
 import logo from '../assets/Rolling_Pines_Lodge_Logo.png';
-import heroSectionImage from '../assets/Hero_Section_Background_Image.png';
-import pizzaImage from '../assets/pizza.png';
-import chickenWafflesImage from '../assets/fried-chicken-waffles.png';
-import birdDogsImage from '../assets/bird-dog.png';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 import './home.css'; 
+  
 
-const featuredDishes = [
-    {
-      image: chickenWafflesImage,
-      title: 'Chicken & Waffles',
-      description: 'Crispy fried chicken served atop fluffy waffles, drizzled with maple syrup for a perfect blend of sweet and savory.',
-    },
-    {
-      image: birdDogsImage,
-      title: 'Bird Dogs',
-      description: 'Juicy chicken tenders nestled in a soft bun, topped with cheese and honey mustard, offering a delightful twist on the classic hot dog.',
-    },
-    {
-      image: pizzaImage,
-      title: 'Meatball Pizza',
-      description: 'A hearty pizza topped with savory meatballs, marinara sauce, and a blend of mozzarella and parmesan cheeses.',
-    },
-  ];
-  
-  
-  function Cart() {
+function Cart() {
+
+    const [cartItems, setCartItems] = useState([]);
+
+    const handleAddToCart = (product) => {
+
+        setCartItems((prevItems) => {
+          const existingItem = prevItems.find((item) => item.id === product.id);
+          if (existingItem) {
+            return prevItems.map((item) =>
+              item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
+            );
+          } else {
+            return [...prevItems, { ...product, quantity: 1 }];
+          }
+        });
+      };
+
+      const handleRemoveFromCart = (productId) => {
+        setCartItems((prevItems) =>
+          prevItems.reduce((acc, item) => {
+            if (item.id === productId) {
+              if (item.quantity === 1) return acc;
+              return [...acc, { ...item, quantity: item.quantity - 1 }];
+            } else {
+              return [...acc, item];
+            }
+          }, [])
+        );
+      };
+
+      const calculateTotal = () => {
+        return cartItems.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2);
+      };
+      
     return (
       <>
         <AppBar position="fixed" sx={{ backgroundColor: '#451a61', paddingLeft: 0, paddingRight: 0 }}>
@@ -65,10 +77,58 @@ const featuredDishes = [
         {/* Offset to prevent content from being hidden behind the AppBar */}
         <Toolbar />
   
-        <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-around', alignItems: 'center', height: '100vh', backgroundColor: '#967988', color: '#f5f5f5'}}>
-            <Typography variant='h2'>Your Cart</Typography>
-        </Box>
-  
+        <Box sx={{ padding: 4 }}>
+      <Typography variant="h4" gutterBottom>
+        Your Cart
+      </Typography>
+      {cartItems.length === 0 ? (
+        <Typography variant="body1">Your cart is empty.</Typography>
+      ) : (
+        <Grid container spacing={2}>
+          {cartItems.map((item) => (
+            <Grid item key={item.id} xs={12} sm={6} md={4}>
+              <Card>
+                <CardMedia
+                  component="img"
+                  height="140"
+                  image={item.image}
+                  alt={item.title}
+                />
+                <CardContent>
+                  <Typography variant="h6">{item.title}</Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {item.description}
+                  </Typography>
+                  <Typography variant="body1">
+                    Quantity: {item.quantity}
+                  </Typography>
+                  <Typography variant="body1">
+                    Price: ${(item.price * item.quantity).toFixed(2)}
+                  </Typography>
+                  <Button
+                    variant="contained"
+                    color="secondary"
+                    onClick={() => handleAddToCart(item)}
+                  >
+                    Add More
+                  </Button>
+                  <Button
+                    variant="outlined"
+                    color="secondary"
+                    onClick={() => handleRemoveFromCart(item.id)}
+                  >
+                    Remove
+                  </Button>
+                </CardContent>
+              </Card>
+            </Grid>
+          ))}
+            <Typography variant="h5" sx={{ marginTop: 2 }}>
+            Total: ${calculateTotal()}
+            </Typography>;
+        </Grid>
+      )}
+    </Box>
        
         <AppBar position="static" sx={{ backgroundColor: '#231F20' }}>
         <Toolbar sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
