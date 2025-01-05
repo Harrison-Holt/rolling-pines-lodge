@@ -7,10 +7,7 @@ import heroSectionImage from '../assets/Hero_Section_Background_Image.png';
 import pizzaImage from '../assets/pizza.png';
 import chickenWafflesImage from '../assets/fried-chicken-waffles.png';
 import birdDogsImage from '../assets/bird-dog.png';
-import UpcomingEvents from './event_section'; 
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import Testimonials from './Review.jsx'; 
-
 import './home.css'; 
 
 const featuredDishes = [
@@ -32,7 +29,7 @@ const featuredDishes = [
   ];
   
   
-  function Homepage() {
+  function Menu() {
     return (
       <>
         <AppBar position="fixed" sx={{ backgroundColor: '#451a61', paddingLeft: 0, paddingRight: 0 }}>
@@ -122,8 +119,6 @@ const featuredDishes = [
             ))}
           </Grid>
         </Box>
-        <UpcomingEvents />
-        <Testimonials/>
         <AppBar position="static" sx={{ backgroundColor: '#231F20' }}>
         <Toolbar sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <Box sx={{ color: '#f5f5f5', padding: 2, display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'flex-start'}}>
@@ -156,4 +151,4 @@ const featuredDishes = [
     );
   }
   
-  export default Homepage;
+  export default Menu;
