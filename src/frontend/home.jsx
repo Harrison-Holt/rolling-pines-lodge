@@ -10,6 +10,7 @@ import chickenWafflesImage from '../assets/fried-chicken-waffles.png';
 import birdDogsImage from '../assets/bird-dog.png';
 import UpcomingEvents from './event_section'; 
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import Testimonials from './Review.jsx'; 
 
 import './home.css'; 

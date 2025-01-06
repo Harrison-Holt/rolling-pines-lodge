@@ -5,6 +5,7 @@ import { Home, MenuBook } from '@mui/icons-material';
 import 'react-image-gallery/styles/css/image-gallery.css';
 import logo from '../assets/Rolling_Pines_Lodge_Logo.png';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 import './home.css'; 
   
