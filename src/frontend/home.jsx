@@ -57,6 +57,9 @@ const featuredDishes = [
               <Button startIcon={<ShoppingCartIcon />} component={RouterLink} to="/Cart" sx={{ color: '#f5f5f5', textTransform: 'none' }}>
                 Your Cart
               </Button>
+              <Button startIcon={<AccountCircleIcon />} component={RouterLink} to="/Cart" sx={{ color: '#f5f5f5', textTransform: 'none' }}>
+                Sign In
+              </Button>
               <Button variant="contained" color="secondary" sx={{ textTransform: 'none', fontWeight: 'bold', color: '#f5f5f5' }}>
                 Book Now
               </Button>
@@ -94,7 +97,7 @@ const featuredDishes = [
   
         {/* Featured Dishes Section */}
         <Box sx={{ padding: 4, backgroundColor: '#967988' }}>
-          <Typography variant="h5" sx={{ textAlign: 'center', marginBottom: 4, marginTop: 5, color: '#f5f5f5'}}>
+          <Typography variant="h5" sx={{ textAlign: 'center', marginBottom: 4, marginTop: 5}}>
             Featured Dishes
           </Typography>
           <Grid container spacing={4} justifyContent="center">

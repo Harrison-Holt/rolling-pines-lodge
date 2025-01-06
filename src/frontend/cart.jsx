@@ -67,6 +67,9 @@ function Cart() {
               <Button startIcon={<ShoppingCartIcon />} component={RouterLink} to="/Cart" sx={{ color: '#f5f5f5', textTransform: 'none' }}>
                 Your Cart
               </Button>
+              <Button startIcon={<AccountCircleIcon />} component={RouterLink} to="/Cart" sx={{ color: '#f5f5f5', textTransform: 'none' }}>
+                Sign In
+              </Button>
               <Button variant="contained" color="secondary" sx={{ textTransform: 'none', fontWeight: 'bold', color: '#f5f5f5' }}>
                 Book Now
               </Button>

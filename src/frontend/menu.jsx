@@ -4,11 +4,11 @@ import { AppBar, Toolbar, Box, Button, Typography, Card, CardMedia, CardContent,
 import { Home, MenuBook } from '@mui/icons-material';
 import 'react-image-gallery/styles/css/image-gallery.css';
 import logo from '../assets/Rolling_Pines_Lodge_Logo.png';
-import heroSectionImage from '../assets/Hero_Section_Background_Image.png';
 import pizzaImage from '../assets/pizza.png';
 import chickenWafflesImage from '../assets/fried-chicken-waffles.png';
 import birdDogsImage from '../assets/bird-dog.png';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import './home.css'; 
 
 const menuItems = {
@@ -84,6 +84,9 @@ const menuItems = {
               </Button>
               <Button startIcon={<ShoppingCartIcon />} component={RouterLink} to="/Cart" sx={{ color: '#f5f5f5', textTransform: 'none' }}>
                 Your Cart
+              </Button>
+              <Button startIcon={<AccountCircleIcon />} component={RouterLink} to="/Cart" sx={{ color: '#f5f5f5', textTransform: 'none' }}>
+                Sign In
               </Button>
               <Button variant="contained" color="secondary" sx={{ textTransform: 'none', fontWeight: 'bold', color: '#f5f5f5' }}>
                 Book Now
