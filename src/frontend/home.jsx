@@ -68,9 +68,6 @@ const featuredDishes = [
           </Toolbar>
         </AppBar>
   
-        {/* Offset to prevent content from being hidden behind the AppBar */}
-        <Toolbar />
-  
         {/* Hero Section */}
         <Box
           sx={{
