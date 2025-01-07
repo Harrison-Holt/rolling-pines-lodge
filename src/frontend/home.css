@@ -33,19 +33,7 @@
     font-weight: bold;
   }
   
-  .main-content {
-    background-color: #967988;
-    text-align: center;
-    min-height: 100vh;
-    width: 100vw;
-    margin-top: 45px; 
-    margin-left: auto;
-    margin-right: auto;
-    background-image: '../assets/Hero_Section_Background_Image.png';
-    background-position: cover;
-    background-position: center;
-  }
-  
+
   html, body {
     background-color: #967988;
     overflow-x: hidden;
