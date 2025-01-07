@@ -3,7 +3,11 @@
     font-weight: bold;
   }
   
+  html, body {
 
+    padding: 0; 
+    margin: 0; 
+  }
 
 
   .card:hover {
