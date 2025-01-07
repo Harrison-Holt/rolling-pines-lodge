@@ -4,14 +4,7 @@
   }
   
 
-  html, body {
-    background-color: #967988;
-    overflow-x: hidden;
-    display: flex; 
-    flex-direction: column;
-    padding: 0; 
-    margin: 0; 
-  }
+
 
   .card:hover {
     transform: scale(1.05);
